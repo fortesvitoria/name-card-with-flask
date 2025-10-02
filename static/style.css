@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --gradiente-azul: linear-gradient(90deg, #90dfe2, #0a2958);
+    --verde-agua-claro: #defaf3;
+    --azul-escuro: #0a2958;
+    --verde-agua: #90dfe2;
+    --off-white: #eaeaea;
+    --grafite: #575a5f;
+    --sombra: #5c5d5e71;
+    --fonte-titulo: "Questrial", sans-serif;
+    --fonte-corpo: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    /* font-size: 50px; */
+    /* letter-spacing: 10px; */
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    /* letter-spacing: 5px; */
+}
+
+body {
+    margin: 0;
+    background: var(--gradiente-azul);
+    font-family: var(--fonte-corpo);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: var(--sombra) 1px 1px 1px;
+}
+
+header a {
+    color: white;
+    padding: 1em;
+}
+
+.img-perfil {
+    margin: auto;
+    max-width: 300px;
+    /* background: var(--gradiente-azul); */
+    color: white;
+    padding: 0px 0px 0px 90px;
+    border-radius: 15px 300px 300px 15px;
+    box-shadow: 5px 5px 10px rgba(85, 56, 56, 0.3);
+}
+
+.container{
+    background-color: var(--off-white);
+}
