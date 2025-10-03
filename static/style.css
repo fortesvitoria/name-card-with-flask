@@ -3,22 +3,23 @@
 
 :root {
     --gradiente-azul: linear-gradient(90deg, #90dfe2, #0a2958);
-    --verde-agua-claro: #defaf3;
-    --azul-escuro: #0a2958;
-    --verde-agua: #90dfe2;
     --off-white: #eaeaea;
     --grafite: #000000c4;
     --sombra: #5c5d5e71;
-    --fonte-titulo: "Questrial", sans-serif;
-    --fonte-corpo: "Montserrat", sans-serif;
+    --fonte: "Questrial", sans-serif;
+    --fonte-footer: "Montserrat", sans-serif;
 }
 
 h1, p {
     letter-spacing: 2px;
 }
 
+h1{ 
+    font-size: 28px;
+}
+
 body {
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte);
     text-transform: uppercase;
     background: var(--gradiente-azul);
     display: flex;
@@ -37,15 +38,10 @@ a:hover {
     text-shadow: var(--sombra) 1px 1px 1px;
 }
 
-header a {
-    color: white;
-    padding: 1em;
-}
-
 .img-perfil {
     margin: 40px 0 10px 0;
     background-color: var(--off-white);
-    max-width: 120px;
+    max-width: 130px;
     color: white;
     border-radius: 300px;
     z-index: 3;
@@ -54,32 +50,44 @@ header a {
 }
 
 .icon {
-    margin: 40px 0 10px 0;
-    background-color: var(--off-white);
-    max-width: 120px;
-    color: white;
+    width: 45px;
     border-radius: 300px;
+    border: solid 1px var(--grafite);
     z-index: 3;
     position: relative; 
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
 }
+
+.icon:hover {
+    box-shadow: var(--sombra) 2px 2px 2px;
+}
+
 
 .container{
     text-align: center;
     background-color: var(--off-white);
     width: 300px;
-    height: 500px;
+    height: 430px;
     border: var(--sombra) 1px 1px 1px;
     border-radius: 5px;
     z-index: 0;
     position: relative; 
+    box-shadow: var(--sombra) 2px 2px 2px;
 }
 
 hr{
-    position: absolute; /* Absoluto para controle total sobre o posicionamento */
-    top: 98px; /* Ajuste da posição da linha */
-    left: 50%; /* Centraliza a linha */
-    transform: translateX(-50%); /* Compensa a largura da linha para ficar centrada */
-    z-index: 1; /* Linha atrás da imagem */
+    position: absolute;
+    top: 98px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
     width: 250px;
+}
+
+.rodape {
+    font-family: var(--fonte-footer);
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
 }
